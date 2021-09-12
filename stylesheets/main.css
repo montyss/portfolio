@@ -16,6 +16,7 @@ body {
 a {
     text-decoration: none;
     font-size: 1.8rem;
+    color: rgb(35, 95, 110);
 }
 
 .container {
@@ -30,6 +31,23 @@ a {
     display: table;
 }
 
+.active {
+    background: rgb(15, 140, 223);
+    border-radius: 4px;    
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+main {
+    min-height: calc(100vh - 204.4px - 104.8px);
+}
 
 /******************HEADER******************/
 
@@ -43,7 +61,7 @@ header .logo-container {
 }
 
 header img {
-    width: 150px;
+    width: 120px;
 }
 
 /******************NAVIGATION MENU******************/
@@ -71,11 +89,7 @@ nav li a {
     display: inline-block;
 }
 
-nav li:hover {
-    background-color: #0b3485;
-}
-
-/******************NAVIGATION MENU******************/
+/******************GALLERY******************/
 
 #gallery {
     padding-top: 15px;
@@ -92,13 +106,6 @@ nav li:hover {
     padding: 10px;
 }
 
-
-#gallery .item:nth-child(2n + 1) {
-    clear: left;
-}
-
-
-
 #gallery .caption {
     background: #f0f0f0;
     padding: 10px;
@@ -108,26 +115,135 @@ nav li:hover {
     margin: 0;
 }
 
-#gallery .caption a {
-    background: red;
+#gallery .picture {
+    line-height: 0;
+}
+
+/******************ABOUT******************/
+
+#about img {
+    border-radius: 100%;
+    padding: 25px 0;
+}
+
+/******************CONTACT******************/
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact li {
+    padding: 6px 0;
+}
+
+#contact .material-icons {
+    float: left;
+    padding: 3px 0;
+}
+
+#contact .contacts a {
+    margin: 3px 0 0 5px;
+    display: inline-block;
 }
 
 /******************FOOTER******************/
 
+footer.main {
+    text-align: center;
+    padding: 15px;
+}
+
+footer.main img {
+    width: 22px;
+}
+
+footer.main a {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+footer.main p {
+    font-size: 1.3rem;
+}
+
 @media only screen and (min-width: 768px) {
-    body {
-        background: red;
+
+/******************GALLERY******************/
+
+    #gallery .item {
+        width: 33.3333%;
+    }
+
+    #gallery .item:nth-child(3n + 1) {
+        clear: left;
+    }
+
+/******************ABOUT******************/
+
+    #about img {
+        width: 70%;
+    }
+
+    #about .profile-pic {
+        float: left;
+        width: 50%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #about .description {
+        float: right;
+        width: 50%;
+        padding: 30px 15px;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    body {
-        background: rgb(13, 199, 206);
+/******************CONTACT******************/
+
+    #contact .info, #contact .contacts {
+        padding: 15px;    
     }
+
+    #contact .info {
+        float: left;
+        width: 70%;
+        padding: 15px;
+    }
+
+    #contact .contacts {
+        float: right;
+        width: 30%;
+        padding: 15px;
+    }
+
+@media only screen and (min-width: 992px) {
+
+/******************GALLERY******************/
+
+    nav li a {
+        transition: background .3s;
+    }
+
+    nav li a:hover {
+        background: rgb(15, 140, 223);
+        border-radius: 4px;
+    }
+
+    #gallery .item {
+        transition: opacity .3s;
+    }
+
+    #gallery .item:hover {
+        opacity: .7;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
-    body {
-        background: khaki;
+
+    #gallery .item:nth-child(2n + 1) {
+        clear: left;
     }
+
 }
