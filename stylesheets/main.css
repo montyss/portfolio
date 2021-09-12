@@ -122,7 +122,7 @@ nav li:hover {
 
 @media only screen and (min-width: 992px) {
     body {
-        background: green;
+        background: rgb(13, 199, 206);
     }
 }
 
