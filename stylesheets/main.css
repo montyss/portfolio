@@ -1,0 +1,117 @@
+/******************GENERAL******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Hina Mincho', serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/******************HEADER******************/
+
+header {
+    background: #5c85d6;
+    text-align: center;
+}
+
+header .logo-container {
+    padding: 20px;
+}
+
+header img {
+    width: 150px;
+}
+
+/******************NAVIGATION MENU******************/
+
+nav {
+    background: #50658f;
+    padding: 5px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+nav li {
+    display: inline-block;
+    padding: 6px 20px 6px 20px;
+}
+
+nav li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav li:hover {
+    background-color: #0b3485;
+}
+
+/******************NAVIGATION MENU******************/
+
+#gallery {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#gallery img {
+    width: 100%;
+}
+
+#gallery .item {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+
+#gallery .item:nth-child(2n + 1) {
+    clear: left;
+}
+
+
+
+#gallery .caption {
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+#gallery .caption p {
+    margin: 0;
+}
+
+#gallery .caption a {
+    background: red;
+}
+
+/******************NAVIGATION MENU******************/
+
+
