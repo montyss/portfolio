@@ -32,7 +32,7 @@ a {
 }
 
 .active {
-    background: rgb(15, 140, 223);
+    background: rgb(11, 118, 189);
     border-radius: 4px;    
 }
 
@@ -234,12 +234,22 @@ footer.main p {
 
 /******************GALLERY******************/
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        background: #5c85d6;
+    }
+
     nav li a {
         transition: background .3s;
     }
 
-    nav li a:hover {
-        background: rgb(15, 140, 223);
+    nav li a:hover, nav li a.active {
+        background: #2b4a88;
         border-radius: 4px;
     }
 
