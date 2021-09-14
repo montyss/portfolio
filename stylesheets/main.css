@@ -97,6 +97,8 @@ nav li a {
 /******************GALLERY******************/
 
 #gallery {
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -106,8 +108,7 @@ nav li a {
 }
 
 #gallery .item {
-    float: left;
-    width: 50%;
+    flex: 0 1 50%;
     padding: 10px;
     position: relative;
 }
@@ -184,13 +185,9 @@ footer.main p {
 
 /******************GALLERY******************/
 
-    #gallery .item {
-        width: 33.3333%;
-    }
-
-    #gallery .item:nth-child(3n + 1) {
-        clear: left;
-    }
+#gallery .item {
+    flex: 0 1 33.333%;
+}
 
 /******************ABOUT******************/
 
